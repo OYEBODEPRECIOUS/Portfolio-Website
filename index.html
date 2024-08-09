@@ -5,14 +5,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Oyebode Precious Isaac">
-    <meta name="description" content="">
-    <meta name="keyword" content="">
+    <meta name="author" content="Oyebode Precious Isaac" />
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
     <title>Precious</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="shortcut icon"
-      href="images/favion/favicon.ico"
+      href="/build/images/favion/favicon.ico"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/build/css/style.css" />
@@ -29,10 +29,12 @@
   </head>
   <body>
     <header
-      class="flex justify-between place-items-center py-8 px-40 bg-[rgb(230,225,247)]"
+      class="flex justify-between place-items-center py-8 px-40 bg-[rgb(230,225,247)] max-sm:px-5 max-md:px-5 b"
     >
-      <a href="index.html" class="text-2xl font-semibold">Portfolio</a>
-      <nav class="max-sm:hidden ">
+      <a href="index.html" class="text-2xl font-semibold max-sm:text-lg"
+        >Portfolio</a
+      >
+      <nav class="max-sm:hidden max-md:hidden">
         <ul class="flex gap-8 text-lg font-semibold">
           <li>
             <a href="#Hero" class="hover:text-[rgb(119,86,255)] hover:font-bold"
@@ -68,29 +70,31 @@
           </li>
         </ul>
       </nav>
-
       <button
         name="Contact"
-        class="bg-[rgb(255,196,72)] font-semibold text-lg py-2 px-4 rounded-lg max-sm:hidden"
+        class="bg-[rgb(255,196,72)] font-semibold text-lg py-2 px-4 rounded-lg max-sm:hidden max-md:hidden"
       >
         <a href="#Contact">Contact</a>
       </button>
 
-      <div>
-        <i class="fa-solid fa-bars text-4xl text-[rgb(119,86,255)] max-lg:"></i>
+      <div class="md:hidden lg:hidden">
+        <i class="fa-solid fa-bars text-3xl text-[rgb(119,86,255)]"></i>
       </div>
-
     </header>
 
-    <aside>
-
-    </aside>
+    <aside></aside>
 
     <main class="max-sm:">
-      <section id="#Hero" class="bg-[rgb(230,225,247)] px-40">
-        <h1 class="text-6xl text-center leading-normal font-semibold py-5">
+      <section
+        id="#Hero"
+        class="bg-[rgb(230,225,247)] px-40 max-sm:px-10 max-md:px-70"
+      >
+        <h1
+          class="text-6xl text-center leading-normal font-semibold py-5 max-sm:text-2xl py-2"
+        >
           Creative
-          <span class="bg-[rgb(119,86,255)] text-white rounded-full px-6 pb-1"
+          <span
+            class="bg-[rgb(119,86,255)] text-white rounded-full px-6 pb-1 max-sm:"
             >Designer</span
           >
           by <br />
@@ -98,19 +102,21 @@
         </h1>
         <div class="flex gap-5 justify-center p-10">
           <button
-            class="bg-[rgb(255,196,72)] font-semibold text-lg rounded-lg py-3 px-8"
+            class="bg-[rgb(255,196,72)] font-semibold text-md rounded-lg py-2 px-8 max-sm:px-3 py-6 text-md"
           >
             Hire Me
           </button>
           <button
-            class="font-semibold text-lg rounded-lg py-3 px-8 border-gray-300 border-2 bg-white"
+            class="font-semibold text-lg rounded-lg py-3 px-8 border-gray-300 border-2 bg-white max-sm:px-3 py-6 text-md"
           >
             Portfolio
           </button>
         </div>
         <div>
-          <div class="grid grid-cols-5 gap-5 place-items-center py-5">
-            <!-- OUR CLIENT SAFETY -->
+          <div
+            class="grid grid-cols-4 gap-5 place-items-center py-5 max-sm:grid-cols-1 full"
+          >
+            <!-- OUR CLIENT SATISFY -->
             <div class="flex flex-col place-items-center">
               <div class="">
                 <button
@@ -159,7 +165,7 @@
 
             <!-- USER VIDEO -->
             <div
-              class="grid-cols-subgrid col-span-3 bg-[rgb(255,196,72)] h-80 rounded-3xl bg-blend-overlay overflow-hidden border-[.2rem] border-[rgb(250,191,73)]"
+              class="grid-cols-subgrid col-span-2 bg-[rgb(255,196,72)] h-80 rounded-3xl bg-blend-overlay overflow-hidden border-[.2rem] border-[rgb(250,191,73)]"
             >
               <div class="">
                 <img
@@ -230,28 +236,44 @@
         <!-- ACHEIVEMENT & AWARD -->
         <div class="pb-24">
           <div
-            class="grid grid-cols-4 justify-items-center place-items-center bg-white py-10 rounded-lg"
+            class="grid grid-cols-4 justify-items-center place-items-center bg-white py-10 rounded-lg max-sm:"
           >
-            <div>
-              <p class="text-[rgb(119,86,255)] text-3xl font-bold">08</p>
+            <div class="grid place-items-center">
+              <p
+                class="text-[rgb(119,86,255)] text-3xl font-bold max-sm:text-xl max-md:text-2xl"
+              >
+                08
+              </p>
               <p class="text-lg font-semibold text-[rgb(150,150,150)]">
                 Awards
               </p>
             </div>
-            <div>
-              <p class="text-[rgb(119,86,255)] text-3xl font-bold">50+</p>
+            <div class="grid place-items-center">
+              <p
+                class="text-[rgb(119,86,255)] text-3xl font-bold max-sm:text-xl max-md:text-2xl"
+              >
+                50+
+              </p>
               <p class="text-lg font-semibold text-[rgb(150,150,150)]">
                 Clients
               </p>
             </div>
-            <div>
-              <p class="text-[rgb(119,86,255)] text-3xl font-bold">04</p>
+            <div class="grid place-items-center">
+              <p
+                class="text-[rgb(119,86,255)] text-3xl font-bold max-sm:text-xl max-md:text-2xl"
+              >
+                04
+              </p>
               <p class="text-lg font-semibold text-[rgb(150,150,150)]">
-                Your Experience
+                Experience
               </p>
             </div>
-            <div>
-              <p class="text-[rgb(119,86,255)] text-3xl font-bold">65+</p>
+            <div class="grid place-items-center">
+              <p
+                class="text-[rgb(119,86,255)] text-3xl font-bold max-sm:text-xl max-md:text-2xl"
+              >
+                65+
+              </p>
               <p class="text-lg font-semibold text-[rgb(150,150,150)]">
                 Projects
               </p>
@@ -261,13 +283,15 @@
       </section>
 
       <section id="About" class="bg-[rgb(17,17,17)]">
-        <div class="px-40 grid grid-cols-2 py-20 gap-11 place-items-center">
+        <div
+          class="px-40 grid grid-cols-2 py-20 gap-11 place-items-center max-sm:px-10"
+        >
           <div
-            class="bg-[rgb(249,193,70)] rounded-[3rem] h-[500px] shadow-[rgb(119,86,255)] shadow-2xl"
+            class="bg-[rgb(249,193,70)] rounded-[3rem] overflow-hidden h-[500px] w-full shadow-[rgb(119,86,255)] shadow-2xl"
           >
             <img
-              class="h-[100%] w-[100%] object-cover object-top"
-              src="images/profile-pics.png"
+              class="h-[100%] object-cover"
+              src="/build/images/profile-pics.png"
               alt=""
             />
           </div>
@@ -294,10 +318,13 @@
         </div>
       </section>
 
-      <section id="#Skill" class="bg-[rgb(230,225,247)] px-40 py-24">
-        <div class="flex flex-col justify-center place-items-center">
-          <h3 class="text-4xl font-bold">Skills & Experience</h3>
-          <p class="py-10 w-[650px] text-center text-lg">
+      <section
+        id="#Skill"
+        class="bg-[rgb(230,225,247)] px-40 py-24 max-sm:px-10"
+      >
+        <div class="grid justify-center place-items-center align-middle">
+          <h3 class="text-4xl font-bold align-middle">Skills & Experience</h3>
+          <p class="py-10 text-lg">
             There are many variation of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour.
@@ -305,7 +332,9 @@
         </div>
         <!-- EXPERIENCES CONTAINER -->
 
-        <div class="bg-[rgb(213,203,255)] grid grid-cols-3 rounded-lg p-5">
+        <div
+          class="bg-[rgb(213,203,255)] grid grid-cols-3 rounded-lg p-5 max-sm:"
+        >
           <div class="col-span-2">
             <header>
               <p class="text-2xl font-bold">Experiences</p>
@@ -319,22 +348,25 @@
         </div>
       </section>
 
-      <section id="Service" class="px-40 py-24 bg-[rgb(17,17,17)]">
+      <section id="Service" class="px-40 py-24 bg-[rgb(17,17,17)] max-sm:px-10">
         <div class="flex flex-col justify-center place-items-center">
           <h4 class="text-4xl font-bold text-white">My Services</h4>
-          <p class="py-16 w-[650px] text-center text-lg text-white">
+          <p class="py-16 text-center text-lg text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
             ea animi odio non dolor, dolorem quaerat dolorum accusantiums.
           </p>
         </div>
 
-        <div class="grid grid-cols-4 gap-5">
+        <div class="grid grid-cols-4 gap-5 max-sm:grid-cols-1">
           <!-- UI UX DESIGN -->
           <div
             class="grid place-items-center border-white border-2 px-1 rounded-lg hover:border-[rgb(119,86,255)] hover:shadow-md hover:shadow-[rgb(250,194,71)]"
-          ><i class="fa-solid fa-user text-5xl text-white pt-8 pb-4"></i>   
+          >
+            <i class="fa-solid fa-user text-5xl text-white pt-8 pb-4"></i>
             <header>
-              <p class="text-white text-2xl font-semibold pb-4">User Research</p>
+              <p class="text-white text-2xl font-semibold pb-4">
+                User Research
+              </p>
             </header>
             <p class="text-white text-md text-center">
               Are you looking for information on UI/UX Design Principle
@@ -348,7 +380,7 @@
           <div
             class="grid place-items-center border-white border-2 px-1 rounded-lg hover:border-[rgb(119,86,255)] hover:shadow-md hover:shadow-[rgb(250,194,71)]"
           >
-          <i class="fa-solid fa-server text-5xl text-white pt-8 pb-5"></i>
+            <i class="fa-solid fa-server text-5xl text-white pt-8 pb-5"></i>
             <header>
               <p class="text-white text-2xl font-semibold pb-4">Database</p>
             </header>
@@ -364,9 +396,11 @@
           <div
             class="grid place-items-center border-white border-2 px-1 rounded-lg hover:border-[rgb(119,86,255)] hover:shadow-md hover:shadow-[rgb(250,194,71)]"
           >
-          <i class="fa-brands fa-figma text-5xl text-white p-8 pb-5"></i>
+            <i class="fa-brands fa-figma text-5xl text-white p-8 pb-5"></i>
             <header>
-              <p class="text-white text-2xl font-semibold pb-4">Product Design</p>
+              <p class="text-white text-2xl font-semibold pb-4">
+                Product Design
+              </p>
             </header>
             <p class="text-white text-md text-center">
               Are you looking for information on UI/UX Design Principle
@@ -380,7 +414,7 @@
           <div
             class="grid place-items-center border-white border-2 px-1 rounded-lg hover:border-[rgb(119,86,255)] hover:shadow-md hover:shadow-[rgb(250,194,71)]"
           >
-          <i class="fa-solid fa-display text-5xl text-white pt-8 pb-5"></i>
+            <i class="fa-solid fa-display text-5xl text-white pt-8 pb-5"></i>
             <header>
               <p class="text-white text-2xl font-semibold pb-4 text-center">
                 Software Development
@@ -397,22 +431,22 @@
       </section>
 
       <section id="Portfolio" class="py-24 bg-[rgb(230,225,247)]">
-        <div class="flex flex-col justify-center place-items-center px-40">
+        <div class="grid justify-center place-items-center px-40 max-sm:px-10">
           <h5 class="text-4xl font-bold text-black">My Portfolio</h5>
-          <p class="py-16 w-[650px] text-center text-lg text-black">
+          <p class="py-16 text-center text-lg text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
             ea animi odio non dolor, dolorem quaerat dolorum accusantiums.
           </p>
         </div>
 
-        <div class="grid grid-cols-3 gap-5">
+        <div class="grid grid-cols-3 gap-5 max-sm:grid-cols-1">
           <div
             class="rounded-lg h-96 w-[100%] overflow-hidden border-[rgb(247,193,71)] border-2 hover:shadow-md hover:shadow-[rgb(119,86,255)]"
           >
             <a href="portfolio.html">
               <img
-                class="h-[100%] w-[100%] object-cover object-center hover:scale-125"
-                src="images/service/service.jpg"
+                class="h-[100%] w-full object-cover object-center hover:scale-125"
+                src="/build/images/service/Macbook-Air-2011x1165.png"
                 alt="service"
               />
             </a>
@@ -424,7 +458,7 @@
             <a href="portfolio.html">
               <img
                 class="h-[100%] w-[100%] object-cover object-center hover:scale-125"
-                src="images/service/service 2.jpg"
+                src="/build/images/service/service 2.jpg"
                 alt="service"
               />
             </a>
@@ -436,71 +470,77 @@
             <a href="portfolio.html">
               <img
                 class="h-[100%] w-[100%] object-cover object-center hover:scale-125"
-                src="images/service/service 3.jpg"
+                src="/build/images/service/service 3.jpg"
                 alt="service"
               />
             </a>
           </div>
         </div>
 
-        <div class="px-40">
+        <div class="px-40 max-sm:px-10">
           <div
-            class="my-24 gap-11 px-24 py-20 grid grid-cols-3 bg-white rounded-xl shadow-[gray] shadow-md place-items-center"
+            class="my-24 gap-11 px-24 py-20 grid grid-cols-3 bg-white rounded-xl shadow-[gray] shadow-md place-items-center max-sm:px-10"
           >
-            <div class="grid col-span-2 align-middle">
-              <p class="text-xl font-semibold pb-8">
+            <div class="grid col-span-2 align-middle max-sm:">
+              <p class="text-xl font-semibold pb-8 max-sm:text-lg">
                 "Precious is somebody you need as a steward of your brand. He's
                 able to craft compelling brand narratives that brings a
                 company's vision to life."
               </p>
-              <div class="flex gap-5 place-items-center">
-                <div class="h-10 w-10 rounded-full overflow-hidden">
-                  <img
-                    class="object-cover object-center h-[100%] w-[100%]"
-                    src="images/user/user 1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <p class="font-bold text-xl">Jhon Smith</p>
-                  <p class="text-lg">Product Designer</p>
-                </div>
-              </div>
             </div>
 
-            <div class="grid gap-5">
-
+            <div class="grid gap-5 max-sm:hidden">
               <div>
-                <i class="fa-solid fa-arrow-right bg-white p-3 shadow-gray-300 shadow-md rounded-full"></i>
-                </div>
-                <div>
-                  <i class="fa-solid fa-arrow-right bg-[rgb(250,194,71)] rounded-full p-3 shadow-gray-300 shadow-md"></i>  
-                </div>
-
+                <i
+                  class="fa-solid fa-arrow-right bg-white p-3 shadow-gray-300 shadow-md rounded-full"
+                ></i>
+              </div>
+              <div>
+                <i
+                  class="fa-solid fa-arrow-right bg-[rgb(250,194,71)] rounded-full p-3 shadow-gray-300 shadow-md"
+                ></i>
+              </div>
+            </div>
+            <div class="flex gap-5 place-items-center max-sm">
+              <div class="h-10 w-10 rounded-full overflow-hidden">
+                <img
+                  class="object-cover object-center h-[100%] w-[100%]"
+                  src="/build/images/user/user 1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <p class="font-bold text-xl">Jhon Smith</p>
+                <p class="text-lg">Product Designer</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="Blog" class="bg-[rgb(119,86,255)] px-40 py-24">
-        <div class="flex flex-col justify-center place-items-center px-40">
+      <section
+        id="Blog"
+        class="bg-[rgb(119,86,255)] px-40 py-24 max-sm:px-10 max-md:px-20"
+      >
+        <div
+          class="flex flex-col justify-center place-items-center px-40 max-sm:px-10"
+        >
           <h6 class="text-4xl font-bold text-white">Latest Blog</h6>
-          <p class="py-16 w-[650px] text-center text-lg text-white">
+          <p class="py-16 text-center text-lg text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
             ea animi odio non dolor, dolorem quaerat dolorum accusantiums.
           </p>
         </div>
 
         <!-- BLOG POST -->
-        <div class="grid grid-cols-3 gap-5">
+        <div class="grid grid-cols-3 gap-5 max-sm:grid-cols-1">
           <!-- BLOG POST 1 -->
           <div
             class="border-[10px] border-white rounded-2xl overflow-hidden bg-[white]"
           >
             <img
               class="object-cover rounded-2xl h-52 w-[100%] object-center"
-              src="images/blog/blog 1.jpg"
+              src="/build/images/blog/blog 1.jpg"
               alt=""
             />
             <div class="">
@@ -522,7 +562,7 @@
           >
             <img
               class="object-cover rounded-2xl h-52 w-[100%] object-center"
-              src="images/blog/blog 2.jpg"
+              src="/build/images/blog/blog 2.jpg"
               alt=""
             />
             <div class="">
@@ -543,7 +583,7 @@
           >
             <img
               class="object-cover rounded-2xl h-52 w-[100%] object-center"
-              src="images/blog/blog 3.jpg"
+              src="/build/images/blog/blog 3.jpg"
               alt=""
             />
             <div class="">
@@ -562,16 +602,19 @@
       </section>
     </main>
 
-    <footer id="Contact" class="bg-[rgb(230,225,247)] px-40 pt-24 pb-4 grid">
-      <div
+    <footer
+      id="Contact"
+      class="bg-[rgb(230,225,247)] px-40 pt-24 pb-4 grid max-sm:px-10 max-md:px-20"
+    >
+      <!-- <div
         class="bg-white rounded-lg grid justify-center place-items-center py-10 mb-10"
       >
         <p class="text-black text-lg font-semibold pb-5">Say Hello at</p>
-        <address class="text-5xl font-semibold text-[rgb(119,86,255)]">
+        <address class="text-5xl aligmi font-semibold text-[rgb(119,86,255)]">
           preckidtech@gmail.com
         </address>
-      </div>
-      <nav class="grid justify-center place-items-center" >
+      </div> -->
+      <nav class="grid justify-center place-items-center">
         <ul class="flex list-none gap-5 font-semibold">
           <li><a class="text-[rgb(255,195,72)] font-bold" href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -580,7 +623,9 @@
           <li><a href="#">Portfolio</a></li>
         </ul>
       </nav>
-      <div class="text-2xl flex gap-3 justify-center place-items-center pb-10 pt-2">
+      <div
+        class="text-2xl flex gap-3 justify-center place-items-center pb-10 pt-2"
+      >
         <!-- LINKEDIN LOGO -->
         <div class="">
           <i
